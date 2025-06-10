@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
   // Smooth scroll to sections
   const navLinks = document.querySelectorAll(".nav-links a");

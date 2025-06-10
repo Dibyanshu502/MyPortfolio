@@ -44,6 +44,7 @@
       line-height: 1.6;
       padding-right: 12px; 
       scrollbar-gutter: stable both-edges;
+      overflow-x: hidden;
     }
 
     html {
@@ -251,8 +252,6 @@
     transform: translateY(0);
   }
 
-
-
     .resume-btn {
       margin-top: 1rem;
       display: inline-block;
@@ -416,11 +415,11 @@
 
     .horizontal-scroll {
       display: flex;
-      overflow-x: auto;
+      overflow-x: hidden;
       gap: 1rem;
       padding-bottom: 1rem;
       scroll-snap-type: x mandatory;
-      overflow: hidden;
+      
     }
     .horizontal-scroll p{
       width: 100%;
@@ -440,6 +439,7 @@
       scroll-snap-align: start;
       text-decoration: none;
       color: var(--text-color);
+      
     }
 
     .project-card img {
@@ -519,6 +519,10 @@
     }
 
     @media (max-width: 768px) {
+
+      .logo{
+        font-size: 1.2rem;
+      }
       .nav-links {
         flex-direction: column;
         position: absolute;
@@ -539,4 +543,46 @@
       .hamburger {
         display: flex;
       }
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+  
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+  
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+  
+      .hamburger span {
+        transition: all 0.3s ease;
+      }
+
+      .project-card{
+        flex: 0 0 auto;
+        width: 200px; /* or max-width if you prefer fluid */
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        text-align: center;
+        transition: transform 0.3s;
+        scroll-snap-align: start;
+        text-decoration: none;
+        color: var(--text-color);
+      }
+
+      .project-card {
+        width: 90%; 
+        margin: 0 auto; 
+      }
+      .horizontal-scroll p{
+        font-size: 1rem;
+      }
+      .horizontal-scroll{
+        overflow-x: auto;
+      }
     }
+
+
