@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
+      document.querySelector(".nav-links").classList.remove("show");
     });
   });
 
@@ -32,17 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }, {
     threshold: 0.1
   });
-
   fadeElements.forEach(el => observer.observe(el));
+
+  // Hamburger menu toggle
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.querySelector(".nav-links");
+  
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
 });
 
-
-//Parallelax effect for sections
-  window.addEventListener('scroll', () => {
-    const parallaxSections = document.querySelectorAll('.parallax-section');
-    parallaxSections.forEach((section, index) => {
-      const speed = 0.1 + (index * 0.05); // Different speed per section
-      const offset = window.scrollY * speed;
-      section.style.transform = `translateY(${offset}px)`;
-    });
-  });

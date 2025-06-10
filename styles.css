@@ -89,6 +89,19 @@
       color: var(--accent-color);
     }
 
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 4px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: white;
+    }
+
     .hero{
       min-height: calc(100vh - 73px);
       display: flex;
@@ -487,4 +500,43 @@
       margin-top: 1.5rem;
       background-color: #181818;
       color: #777;
+    }
+
+    /* Hamburger styles */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: var(--text-color);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: var(--card-bg);
+        width: 120px;
+        padding: 10px;
+        display: none;
+        border-radius: 8px;
+        align-items: center;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
     }
