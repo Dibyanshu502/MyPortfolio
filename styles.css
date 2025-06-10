@@ -524,7 +524,7 @@
         position: absolute;
         top: 60px;
         right: 0;
-        background: var(--card-bg);
+        background-color: rgba(24, 24, 24, 0.9);
         width: 120px;
         padding: 10px;
         display: none;
