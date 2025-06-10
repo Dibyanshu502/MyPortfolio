@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My_Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#About Me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="soft-light"></div>  <!-- soft light effect -->
+      <span class="material-icons gear gear-1 small">settings</span>
+      <span class="material-icons gear gear-2 large">settings_ethernet</span>
+      <span class="material-icons gear gear-3">build_circle</span>
+      <span class="material-icons gear gear-4 small">memory</span>
+      <span class="material-icons gear gear-5">precision_manufacturing</span>
+      <span class="material-icons gear gear-6 large">settings</span>
+      <span class="material-icons gear gear-7 small">developer_mode</span>
+      <span class="material-icons gear gear-8">toll</span>
+      <div class="hero-content">
+        <h1 id="intro-text"></h1>
+        <p id="sub-text"></p>
+        <div class="hero-buttons hidden">
+          <a href="/Assets/Resume.pdf" download="Dibyanshu_Resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/dibyanshu-kumar-35b338231" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Dibyanshu502" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- About Me Section -->
+    <section class="timeline-section" id="About Me">
+      <h1 class="section-title">About Me</h1>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <i class="fa-solid fa-user-tie timeline-icon"></i>
+          <h3 class="timeline-title">Intern at BonV Aero <span>(2024–2025)</span></h3>
+          <p class="timeline-desc">
+            Worked on real-time software and mechanical systems. Learned professional teamwork, communication, and product development lifecycles.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <i class="fa-solid fa-graduation-cap timeline-icon"></i>
+          <h3 class="timeline-title">Graduation <span>(2021–2025)</span></h3>
+          <p class="timeline-desc">
+            Pursued Mechanical Engineering at VSSUT, Burla. Transitioned into software with interdisciplinary problem-solving skills.
+            <p>CGPA: 8.17</p>
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <i class="fa-solid fa-school timeline-icon"></i>
+          <h3 class="timeline-title">Intermediate <span>(2019–2021)</span></h3>
+          <p class="timeline-desc">
+            Completed science stream at Demonstration Multipurpose School. Built critical thinking and innovation mindset.
+            <p>Percentage: 83.2%</p>
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <i class="fa-solid fa-school timeline-icon"></i>
+          <h3 class="timeline-title">Matriculation <span>(2009–2019)</span></h3>
+          <p class="timeline-desc">
+            Graduated from St. Xavier International School. Excelled in academics and extracurriculars.
+            <p>Percentage: 93.6%</p>
+          </p>
+        </div>
+      </div>
+      <div class="certifications">
+        <h3 class="cert-title">Certifications</h3>
+        <ul class="cert-list">
+          <li><a href="https://drive.google.com/file/d/1XQjY6jhVZ6osvkibt2PQjkblJz3YaDSt/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Full Stack Development – Udemy</a></li>
+          <li><a href="https://drive.google.com/file/d/1yK2ISSIVtVmmVGHYCJUAJowVIGwaA4nO/view?usp=sharing" target="_blank" rel="noopener noreferrer">AWS Academy Cloud Foundations – AWS Academy</a></li>
+        </ul>
+      </div>
+    </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h1 class="section-title">Projects</h1>
+    <div class="scroll-container">
+      <div class="horizontal-scroll top">
+        <!-- Figma Designs -->
+        <a href="https://figma.com" target="_blank" class="project-card">
+          <img src="/Assets/f1.png" alt="Figma Project">
+          <p>Figma Design 1</p>
+        </a>
+        <a href="#" target="_blank" class="project-card">
+          <img src="/Assets/f2.png" alt="Figma Project">
+          <p>Figma Design 2</p>
+        </a>
+        <a href="https://figma.com" target="_blank" class="project-card">
+            <img src="/Assets/f1.png" alt="Figma Project">
+            <p>Figma Design 1</p>
+        </a>
+        <a href="#" target="_blank" class="project-card">
+          <img src="/Assets/f2.png" alt="Figma Project">
+          <p>Figma Design 2</p>
+        </a>
+      </div>
+      <div class="horizontal-scroll bottom">
+        <!-- Website Templates -->
+        <a href="https://dibyanshu502.github.io/Weather-forecasting-WebApp/" target="_blank" class="project-card">
+          <img src="/Assets/p1Full.png" alt="Website Project">
+          <p>Weather-Forecasting WebApp</p>
+        </a>
+        <a href="https://dibyanshu502.github.io/Admin_Dashboard/" target="_blank" class="project-card">
+          <img src="/Assets/p2.png" alt="Website Project">
+          <p>Admin Dashboard</p>
+        </a>
+        <a href="https://github.com/Dibyanshu502/Tab_Tracker" target="_blank" class="project-card">
+          <img src="/Assets/p3.png" alt="Website Project">
+          <p>Chrome Extension</p>
+        </a>
+        <a href="https://dibyanshu502.github.io/Admin_Dashboard/" target="_blank" class="project-card">
+          <img src="/Assets/p2black.png" alt="Website Project">
+          <p>E-Commerce Site</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h1 class="section-title">Contact Me</h1>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Subject" required />
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dibyanshu Kumar. All rights reserved.</p>
+  </footer>
+</body>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+  const name = '<span class="gradient-name">Dibyanshu Kumar</span>';
+
+  new Typed('#intro-text', {
+    strings: [`Hi, I'm ${name}`],
+    typeSpeed: 40,
+    showCursor: false,
+    onComplete: () => {
+      new Typed('#sub-text', {
+        strings: ['~ Designer ~ Developer ~ Dreamer'],
+        typeSpeed: 30,
+        showCursor: false,
+        onComplete: () => {
+          document.querySelector('.hero-buttons').classList.add('visible');
+        }
+      });
+    }
+  });
+
+</script>
+</html>
