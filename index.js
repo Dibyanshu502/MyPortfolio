@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   // Smooth scroll to sections
   const navLinks = document.querySelectorAll(".nav-links a");
@@ -9,6 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetSection = document.getElementById(targetId);
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+      // Close mobile nav after click (for better UX)
+      const navLinksContainer = document.querySelector('.nav-links');
+      if (window.innerWidth <= 768 && navLinksContainer.classList.contains('active')) {
+        navLinksContainer.classList.remove('active');
       }
     });
   });
@@ -32,17 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }, {
     threshold: 0.1
   });
-
   fadeElements.forEach(el => observer.observe(el));
-});
 
-
-//Parallelax effect for sections
-  window.addEventListener('scroll', () => {
-    const parallaxSections = document.querySelectorAll('.parallax-section');
-    parallaxSections.forEach((section, index) => {
-      const speed = 0.1 + (index * 0.05); // Different speed per section
-      const offset = window.scrollY * speed;
-      section.style.transform = `translateY(${offset}px)`;
+  // Navbar mobile toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinksContainer = document.querySelector('.nav-links');
+  if (menuToggle && navLinksContainer) {
+    menuToggle.addEventListener('click', () => {
+      navLinksContainer.classList.toggle('active');
     });
-  });
+  }
+});
